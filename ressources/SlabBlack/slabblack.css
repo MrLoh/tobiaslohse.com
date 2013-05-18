@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'SlabBlackBlack';
+    src: url('slabblack.eot');
+    src: url('slabblack.eot') format('embedded-opentype'),
+         url('slabblack.woff') format('woff'),
+         url('slabblack.ttf') format('truetype'),
+         url('slabblack.svg#SlabBlackBlack') format('svg');
+}

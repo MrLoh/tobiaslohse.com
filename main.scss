@@ -1,0 +1,432 @@
+@font-face {
+	font-family: "SlabBlack";
+	src: url("ressources/SlabBlack/slabblack.eot");
+	src: url("ressources/SlabBlack/slabblack.eot") format("embedded-opentype"), url("ressources/SlabBlack/slabblack.woff") format("woff"), url("ressources/SlabBlack/slabblack.ttf") format("truetype"), url("ressources/SlabBlackslabblack.svg#SlabBlackBlack") format("svg");
+}
+/* General ------------------------------------------ */
+$dark: #414141;
+$transparent: rgba(0,0,0,0.5);
+$light: #f1f1f1;
+
+body {
+	background: #f1f1f1 url("ressources/back.png") repeat fixed;
+	background-size: 25em 25em;
+	font-family: "Kontrapunkt Bob","Ubuntu", sans-serif; 
+	font-weight: 300;
+	font-size: 90%;
+	color: #414141;
+	text-align: justify;
+	line-height: 1.8em;
+}
+#center{
+	width: 50em;
+	margin: auto;
+	position: relative;
+}
+.hidden {
+	visibility: hidden;
+}
+/* Styles for Tytle --------------------------------- */
+div.title{
+	margin-top: 1em;
+	text-align: center;
+}
+div.title img {
+	width: 31em;
+	margin-bottom: 0;
+}
+div.title span {
+	background: #f1f1f1 url("ressources/front.png");
+	color: #414141;
+	padding: 0.4em 1.4em 0.4em 1.4em;
+	border-radius: 0.7em;
+	margin-left: 1.7em;
+	margin-right: 1.7em;
+	box-shadow: 0 0 1.3em black;
+}
+div.title span a {
+	font-family: "SlabBlack", sans-serif;
+	font-size: 1em;
+	color: inherit;
+	text-decoration: none;
+}
+div.title span a:hover, div.title span a:active, div.title span a:focus {
+	text-decoration: underline;
+}
+/* Styles for Page ---------------------------------- */
+.page {
+	width: 31em;
+	margin-left: 5.5em;
+	margin-top: 3em;
+	margin-bottom: 2em;
+	padding-left: 5em;
+	padding-right: 5em;
+	padding-top: 4em;
+	padding-bottom: 2em;
+	overflow: hidden;
+	background:#f1f1f1 url("ressources/front.png");
+	background-size: 30em 30em;
+	color: #414141;
+	box-shadow: 0 0 1.3em black;
+	position: relative;
+}
+h1 {
+	font-family: "SlabBlack", sans-serif;
+	font-weight: 100;
+	font-size: 2.8em;
+	text-align: center;
+	line-height: 1.2em;
+	margin-bottom: 0.5em;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+p.date{
+	margin-left: auto;
+	margin-right: auto;
+	width: 17em;
+	text-align: center;
+	border-bottom: #414141 0.12em solid;
+}
+p.date span{
+	font-style:italic;
+	color: #414141;
+	background: #f1f1f1 url("ressources/front.png");
+	padding:0.3em;
+	position: relative;
+	top: 0.9em;
+}
+h2 {
+	font-family: "Kontrapunkt Bob", sans-serif; 
+	font-size: 1.1em;
+	font-weight: bold;
+	margin-top: 2em;
+	margin-bottom: -0.7em;
+}
+p {
+	margin-bottom: 1em;
+}
+ul {
+	margin-left:1.25em;
+	padding: 0px;
+	list-style-image:url("ressources/hyphen.svg");
+	list-style-type: circle;
+	text-indent: 0px;
+}
+div.page p a:link, div.page p a:visited {
+	background: #f1f1f1 url("ressources/link.svg") no-repeat;
+	background-position: bottom right;
+	background-size: 0.5em;
+	top: 0;
+	left: 0;
+	padding-right: 0.5em;
+	margin-right: 0.1em;
+}
+div.page p a:hover, div.page p a:active, div.page p a:focus {
+	text-decoration: underline;
+}
+code {
+	font: {
+	family: "Menlo";
+	size: 0.9em;
+	weigth: 100;
+	}
+}
+
+pre {
+	@extend code;
+	
+	margin: 2em -0.5em 2em -0.5em;
+	color: $light;
+	background-color: $dark;
+	box-shadow: inset 0 0 2em 0.2em $transparent;
+	line-height: 1.4em;
+	overflow-y: scroll;
+	border-radius: 0.5em;
+	div {
+		padding: 0 1.5em 0 1.5em;
+	}
+}
+
+
+@import "css/code.css";
+
+/* Framing for Images on Page ----------------------- */
+.frame {
+	width: 29em;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+}
+.frame.narrow {
+	width:19em;
+}
+.frame img {
+	width: 27.5em;
+	margin: 0px auto;
+	border: 0.75em solid #f1f1f1;
+	border-image: url("ressources/front.png");
+	box-shadow: 0 0em 0.4em rgba(0,0,0,0.5);
+}
+.frame.caption img {
+	border-bottom: 3em;
+}
+p.caption {
+	margin: -4.5em auto 4em auto;
+	text-align: center;
+	font-style: italic;
+}
+.frame.narrow img {
+	width: 17.5em;
+}
+div.frame span.tr, div.frame span.tl,div.frame span.br,div.frame span.bl {
+	position: absolute;
+	width: 3em;
+	height: 3em;
+	background-size: 3em 3em;
+}
+.frame span.tl {
+	top: -0.7em;
+	left: -0.7em;
+	background: url("ressources/frame/frame_tl.png") no-repeat;
+}
+.frame span.tr {
+	top: -0.7em;
+	right: -0.7em;
+	background: url("ressources/frame/frame_tr.png") no-repeat;
+}
+.frame span.br {
+	bottom: -0.3em;
+	right: -0.7em;
+	background: url("ressources/frame/frame_br.png") no-repeat;
+}
+.frame span.bl {
+	bottom: -0.3em;
+	left: -0.7em;
+	background: url("ressources/frame/frame_bl.png") no-repeat;
+}
+/* Sharing and Tagging ------------------------------ */
+div.share {
+	margin-left: -1.5em;
+	margin-top: 2em;
+	width: 33em;
+	height: 1.4em;
+	background: #f1f1f1 url("ressources/front.png");
+	box-shadow: 0 0.6em 0.4em -0.6em rgba(0,0,0,0.5);
+	padding-bottom: 0.5em;
+	margin-bottom: 1em;
+	position: relative;
+	overflow: hidden;
+}
+div.share a.tweet, div.share a.fbshare, div.share a.pin {
+	font-family: "SlabBlack", sans-serif;
+	color: #414141;
+	text-decoration: none;
+	background-size: 0.95em;
+	padding-left: 1.2em;
+	margin-left: 1.5em;
+}
+.share a.tweet {
+	background: url("ressources/share/tweet.svg") no-repeat;
+	background-position: left top;
+}
+.share a.fbshare {
+	background: url("ressources/share/fbshare.svg") no-repeat;
+	background-position: left top;
+}
+.share a.pin {
+	background: url("ressources/share/pin.svg") no-repeat;
+	background-position: left top;
+}
+.tags div {
+	height: 4em;
+	padding-left: 0.5em;
+	overflow-x: scroll;
+	white-space: nowrap;
+}
+.tags {
+	margin-top: -1em;
+	height: 2.2em;
+	overflow: hidden;
+	margin-bottom: 2em;
+	text-align: right;
+	font-weight: 100;
+
+}
+.tags a {
+	background: #f1f1f1 url("ressources/front.png");
+	color: #414141;
+	font-family: "SlabBlack", sans-serif;
+	padding-top: 2em;
+	padding-bottom: 0.4em;
+	padding-left: 0.7em;
+	padding-right: 0.7em;
+	border-radius: 1em;
+	box-shadow: 0 0em 0.4em rgba(0,0,0,0.5);
+	margin-right: 0.7em;
+	text-decoration: none;
+}
+.tags a:hover, .tags:active, .tags:focus {
+	text-decoration: underline;
+}
+/* Comment-Box -------------------------------------- */
+form.comment {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -4em;
+	margin-bottom: 4em;
+	width: 30em;
+	padding-top: 2em;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-bottom: 0em;
+	border-radius: 0.5em;
+	background: #f1f1f1 url("ressources/front.png");
+	color: #414141;
+	box-shadow: 0 0 1.3em black;
+}
+form.comment span {
+	white-space: nowrap;
+}
+form.comment input {
+	width: 6.9em;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 300;
+	font-style: italic;
+	font-size: 0.8em;
+	color: #414141;
+	background: #f1f1f1 url("ressources/front.png");
+	border: none;
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
+	padding-right: 0.5em;
+	padding-left: 0.5em;
+	border-radius: 0.4em;
+	margin-right: 1.5em;
+	margin-left: 0.5em;
+	box-shadow: inset 0 0em 0.4em rgba(0,0,0,0.5);
+}
+form.comment textarea {
+	width: 36.5em;
+	text-align: left;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 300;
+	font-style: italic;
+	font-size: 0.8em;
+	color: #414141;
+	background: #f1f1f1 url("ressources/front.png");
+	border: none;
+	padding: 0.5em;
+	border-radius: 0.4em;
+	box-shadow: inset 0 0em 0.4em rgba(0,0,0,0.5);
+	margin-top: 1em;
+	height: 5em;
+	position: relative;
+	overflow-y: scroll;
+	margin-bottom: -1em;
+}
+form.comment input.button {
+	font-family: "SlabBlack", sans-serif;
+	font-style: normal;
+	text-align: center;
+	width: 6.5em;
+	margin-top: -2em;
+	background: #414141;
+	color: #f1f1f1;
+	padding-top: 2em;
+	padding-bottom: 0.4em;
+	padding-left: 0.7em;
+	padding-right: 0.7em;
+	border-radius: 1em;
+	box-shadow: 0 0em 0.4em rgba(0,0,0,0.5);
+	margin-left: 30em;
+	margin-bottom: 1em;
+}
+/* Footer -------------------------------------------- */
+div.footer{
+	padding-top: 1em;
+	margin-left: 4.5em;
+	text-align: center;
+}
+div.footer div {
+	width: 8.2em;
+	float: left;
+	background: #f1f1f1 url("ressources/front.png");
+	color: #414141;
+	padding: 0.4em 1.4em 0.4em 1.4em;
+	border-radius: 0.7em;
+	margin-left: 1.7em;
+	margin-right: 1.7em;
+	box-shadow: 0 0 1.3em black;
+	font-family: "SlabBlack", sans-serif;
+	font-size: 1em;
+	margin-bottom: 4em;
+	white-space: nowrap;
+}
+div.footer a {
+	color: inherit;
+	text-decoration: none;
+}
+div.footer div.subscribe a {
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 500;
+	padding-right: 0.3em;
+	padding-left: 0.3em;
+}
+div.footer a:hover, div.footer a:active, div.footer a:focus {
+	text-decoration: underline;
+}
+/* Navigation on the Left ---------------------------- */
+div.nav {
+	width: 5em;
+	position: absolute;
+	top: -6em;
+	left: 0;
+	text-align: left;
+}
+div.nav div {
+	position: fixed;
+	width: 5em;
+}
+div.nav ul {
+	width: 4em;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+div.nav img{
+	width: 3.4em;
+	margin-bottom: 1em;
+}
+div.nav img:hover, div.nav img:focus {
+	background: rgba(255,255,255,0.07);
+	border-radius: 2em;
+}
+/* Links on the Right ------------------------------- */ 
+div.linklist {
+	width: 5em;
+	position: absolute;
+	top: -6em;
+	right: 1em;
+	text-align: right;
+}
+div.linklist div {
+	position: fixed;
+}
+div.linklist ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+div.linklist img {
+	width: 3.5em;
+	margin-bottom: 0.8em;
+}
+
+div.linklist img:hover, div.linklist img:focus {
+	background: rgba(255,255,255,0.07);
+	border-radius: 2em;
+}

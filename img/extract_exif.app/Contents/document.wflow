@@ -59,7 +59,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>COMMAND_STRING</key>
-					<string>exiftool -datetimeoriginal -make -model -lens -exposuretime -aperture -iso -focallength -j -w! json /Applications/MAMP/htdocs/t-lohse.de/img/</string>
+					<string>exiftool -datetimeoriginal -make -model -lens -exposuretime -aperture -iso -focallength -j -w! json /Applications/MAMP/htdocs/tobiaslohse.com/img/ &amp;&amp; cd /Applications/MAMP/htdocs/tobiaslohse.com/img/ &amp;&amp; cp *.json meta &amp;&amp; rm *.json </string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
 					<key>inputMethod</key>
@@ -95,6 +95,8 @@
 				</array>
 				<key>OutputUUID</key>
 				<string>713628AD-DB46-4E8E-A285-DBC7AA0D77CF</string>
+				<key>StartAction</key>
+				<false/>
 				<key>UUID</key>
 				<string>A34E44B7-BDD2-41DE-AFE6-87624F875805</string>
 				<key>UnlocalizedApplications</key>
@@ -169,21 +171,400 @@
 						<string>4</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>388.500000:1012.000000</string>
+				<string>431.500000:864.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>
 		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.path</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.1.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Finder</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>fileNames</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.path</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Get Specified Finder Items.action</string>
+				<key>ActionName</key>
+				<string>Get Specified Finder Items</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>fileNames</key>
+					<array>
+						<string>/Applications/MAMP/htdocs/tobiaslohse.com/img</string>
+					</array>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.SpecifiedFiles</string>
+				<key>CFBundleVersion</key>
+				<string>1.1.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryFilesAndFolders</string>
+				</array>
+				<key>Class Name</key>
+				<string>SpecifiedFilesAction</string>
+				<key>InputUUID</key>
+				<string>62EFCCDE-DE40-40F1-A06C-5E6903218CB0</string>
+				<key>Keywords</key>
+				<array>
+					<string>File</string>
+					<string>Choose</string>
+					<string>Find</string>
+					<string>Get</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>00B3DD8F-5B93-44AE-8BBA-35EE1AFA69AF</string>
+				<key>UUID</key>
+				<string>901E9DCD-C2A3-4F99-9625-715F6F936C9B</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Finder</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<array/>
+						<key>name</key>
+						<string>fileNames</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>conversionLabel</key>
+				<integer>0</integer>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>431.500000:681.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Get Specified Finder Items.action/Contents/Resources/English.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<false/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.path</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Finder</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>recurse</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.path</string>
+					</array>
+				</dict>
+				<key>AMRequiredResources</key>
+				<array/>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Get Folder Contents.action</string>
+				<key>ActionName</key>
+				<string>Get Folder Contents</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>recurse</key>
+					<false/>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.GetFolderContents</string>
+				<key>CFBundleVersion</key>
+				<string>1.0.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<true/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryFilesAndFolders</string>
+				</array>
+				<key>Class Name</key>
+				<string>GetFolderContents</string>
+				<key>InputUUID</key>
+				<string>6D8931C5-DB6F-46DA-AAC1-7646986634AC</string>
+				<key>Keywords</key>
+				<array>
+					<string>File</string>
+					<string>Folder</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>97D91CB6-73C7-4525-93AF-8232CFA3BC12</string>
+				<key>UUID</key>
+				<string>11089A89-4AFB-4CA6-8D68-DFF5B2BA05A0</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Finder</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<false/>
+						<key>name</key>
+						<string>recurse</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>conversionLabel</key>
+				<integer>0</integer>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>431.500000:443.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Get Folder Contents.action/Contents/Resources/English.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<false/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.path</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.3.1</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Preview</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>percentageValue</key>
+					<dict/>
+					<key>scaleMethod</key>
+					<dict/>
+					<key>scaleValue</key>
+					<dict/>
+					<key>sizeValue</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.path</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Scale Images.action</string>
+				<key>ActionName</key>
+				<string>Scale Images</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>percentageValue</key>
+					<integer>100</integer>
+					<key>scaleMethod</key>
+					<integer>0</integer>
+					<key>scaleValue</key>
+					<integer>0</integer>
+					<key>sizeValue</key>
+					<integer>1000</integer>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.ScaleImage</string>
+				<key>CFBundleVersion</key>
+				<string>1.3.1</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<true/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryPhotos</string>
+				</array>
+				<key>Class Name</key>
+				<string>AMScaleImagesAction</string>
+				<key>InputUUID</key>
+				<string>F6A07219-236B-42F0-8434-70C43FA62E75</string>
+				<key>Keywords</key>
+				<array>
+					<string>Image</string>
+					<string>Photo</string>
+					<string>Scale</string>
+					<string>Change</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>F6F8521B-B305-47A0-A1F8-CB03820A1898</string>
+				<key>UUID</key>
+				<string>1E1865AB-5DE5-4863-90EF-E095040971FA</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Preview</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<integer>100</integer>
+						<key>name</key>
+						<string>percentageValue</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+					<key>1</key>
+					<dict>
+						<key>default value</key>
+						<integer>0</integer>
+						<key>name</key>
+						<string>scaleValue</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>1</string>
+					</dict>
+					<key>2</key>
+					<dict>
+						<key>default value</key>
+						<integer>0</integer>
+						<key>name</key>
+						<string>scaleMethod</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>2</string>
+					</dict>
+					<key>3</key>
+					<dict>
+						<key>default value</key>
+						<integer>480</integer>
+						<key>name</key>
+						<string>sizeValue</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>3</string>
+					</dict>
+				</dict>
+				<key>conversionLabel</key>
+				<integer>0</integer>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>431.500000:123.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Scale Images.action/Contents/Resources/English.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
 	</array>
 	<key>connectors</key>
-	<dict/>
+	<dict>
+		<key>20F85955-88F1-4CF7-829B-AE5C58DB2603</key>
+		<dict>
+			<key>from</key>
+			<string>901E9DCD-C2A3-4F99-9625-715F6F936C9B - 901E9DCD-C2A3-4F99-9625-715F6F936C9B</string>
+			<key>to</key>
+			<string>11089A89-4AFB-4CA6-8D68-DFF5B2BA05A0 - 11089A89-4AFB-4CA6-8D68-DFF5B2BA05A0</string>
+		</dict>
+		<key>226768CC-AE82-4C40-AD19-64B1062ED732</key>
+		<dict>
+			<key>from</key>
+			<string>A34E44B7-BDD2-41DE-AFE6-87624F875805 - A34E44B7-BDD2-41DE-AFE6-87624F875805</string>
+			<key>to</key>
+			<string>901E9DCD-C2A3-4F99-9625-715F6F936C9B - 901E9DCD-C2A3-4F99-9625-715F6F936C9B</string>
+		</dict>
+		<key>CA3A2465-B22F-47D7-A834-5EDF2725AF83</key>
+		<dict>
+			<key>from</key>
+			<string>11089A89-4AFB-4CA6-8D68-DFF5B2BA05A0 - 11089A89-4AFB-4CA6-8D68-DFF5B2BA05A0</string>
+			<key>to</key>
+			<string>1E1865AB-5DE5-4863-90EF-E095040971FA - 1E1865AB-5DE5-4863-90EF-E095040971FA</string>
+		</dict>
+	</dict>
 	<key>workflowMetaData</key>
 	<dict>
 		<key>workflowTypeIdentifier</key>

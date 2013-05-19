@@ -149,16 +149,21 @@ code, pre {
 }
 
 pre {
-  margin: 2em -0.5em 2em -0.5em;
-  color: #f1f1f1;
-  background-color: #414141;
-  box-shadow: inset 0 0 2em 0.2em rgba(0, 0, 0, 0.5);
-  line-height: 1.4em;
-  overflow-y: scroll;
-  border-radius: 0.5em;
+  line-height: 1.3em;
+  width: 98%;
+  margin: auto;
+  color: white;
+  background: #414141 url("ressources/grid.png");
+  background-size: 29.7em;
+  background-position: center top;
+  box-shadow: inset 0 0 20em 0em rgba(0, 0, 0, 0.4), 0 0em 0.4em rgba(0, 0, 0, 0.5);
+  overflow-y: hidden;
 }
 pre div {
-  padding: 0 1.5em 0 1.5em;
+  white-space: pre-wrap;
+  overflow-y: hidden;
+  padding: 0.8em 1.5em 0.65em 1.5em;
+  opacity: .7;
 }
 
 /* Framing for Images on Page ----------------------- */
@@ -226,6 +231,10 @@ div.frame span.tr, div.frame span.tl, div.frame span.br, div.frame span.bl {
   bottom: -0.3em;
   left: -0.7em;
   background: url("ressources/frame/frame_bl.png") no-repeat;
+}
+
+.code span.br, .code span.bl {
+  bottom: -0.7em;
 }
 
 /* Sharing and Tagging ------------------------------ */

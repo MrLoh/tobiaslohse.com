@@ -5,8 +5,8 @@ pre .kwd { color: #a6c2e1; font-weight: bold }
 pre .com { color: #909090; font-style: italic; } /* comment - skyblue */
 pre .typ { color: #bcefbc } /* type    - lightgreen */
 pre .lit { color: #c17676 } /* literal - darkred */
-pre .pun { color: #f1f1f1 }    /* punctuation */
-pre .pln { color: #f1f1f1 }    /* plaintext */
+pre .pun { color: inherit }    /* punctuation */
+pre .pln { color: inherit }    /* plaintext */
 pre .tag { color: #e8de96; font-weight: bold } /* html/xml tag    - lightyellow */
 pre .atn { color: #beaa80; font-weight: bold } /* attribute name  - khaki */
 pre .atv { color: #f1b4b4 } /* attribute value - pink */

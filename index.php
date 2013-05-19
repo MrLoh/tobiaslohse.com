@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="main.css">
 		<link href="http://fonts.googleapis.com/css?family=Ubuntu:300,500,300italic" rel="stylesheet" type="text/css">
 	</head>
-<!-- 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script> -->
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 	<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
 	<!-- Body -->
 	<body>
@@ -128,7 +128,9 @@
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, commodi, consequatur deserunt atque iste ab labore aliquam eligendi debitis doloremque impedit vitae praesentium id harum autem tenetur consectetur exercitationem quasi. 
 				</p>
-				<pre class="prettyprint linemus"><code><div>
+				<div class="frame code"> 
+					<span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span>
+					<pre class="prettyprint linemus"><code><div>
 &lt;script type="text/javascript">
 // Say hello world until the user starts questioning the meaningfulness of their existence. 
 function helloWorld(world) {
@@ -150,7 +152,8 @@ pre {
   background: white url("ressources/back.png");
 }
 &lt;/style>
-				</div></code></pre>
+					</div></code></pre>
+				</div>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, error qui assumenda tempora quaerat molestiae voluptatum iste suscipit veritatis aut atque animi doloremque velit saepe ab explicabo ullam impedit aliquam.
 				</p>

@@ -1,20 +1,18 @@
-@font-face {
-	font-family: "SlabBlack";
-	src: url("ressources/SlabBlack/slabblack.eot");
-	src: url("ressources/SlabBlack/slabblack.eot") format("embedded-opentype"), url("ressources/SlabBlack/slabblack.woff") format("woff"), url("ressources/SlabBlack/slabblack.ttf") format("truetype"), url("ressources/SlabBlackslabblack.svg#SlabBlackBlack") format("svg");
-}
+@import "css/base";
+
+@import "css/fonts";
+@import "css/code";
+
 /* General ------------------------------------------ */
-$dark: #414141;
-$transparent: rgba(0,0,0,0.5);
-$light: #f1f1f1;
+
 
 body {
-	background: #f1f1f1 url("ressources/back.png") repeat fixed;
+	background: $light url("ressources/back.png") repeat fixed;
 	background-size: 25em 25em;
-	font-family: "Kontrapunkt Bob","Ubuntu", sans-serif; 
+	font-family: "KontrapunktBob", sans-serif; 
 	font-weight: 300;
 	font-size: 90%;
-	color: #414141;
+	color: $dark;
 	text-align: justify;
 	line-height: 1.8em;
 }
@@ -26,7 +24,7 @@ body {
 .hidden {
 	visibility: hidden;
 }
-/* Styles for Tytle --------------------------------- */
+/* Styles for Title --------------------------------- */
 div.title{
 	margin-top: 1em;
 	text-align: center;
@@ -36,8 +34,8 @@ div.title img {
 	margin-bottom: 0;
 }
 div.title span {
-	background: #f1f1f1 url("ressources/front.png");
-	color: #414141;
+	background: $light url("ressources/front.png");
+	color: $dark;
 	padding: 0.4em 1.4em 0.4em 1.4em;
 	border-radius: 0.7em;
 	margin-left: 1.7em;
@@ -64,9 +62,9 @@ div.title span a:hover, div.title span a:active, div.title span a:focus {
 	padding-top: 4em;
 	padding-bottom: 2em;
 	overflow: hidden;
-	background:#f1f1f1 url("ressources/front.png");
+	background:$light url("ressources/front.png");
 	background-size: 30em 30em;
-	color: #414141;
+	color: $dark;
 	box-shadow: 0 0 1.3em black;
 	position: relative;
 }
@@ -87,22 +85,21 @@ p.date{
 	margin-right: auto;
 	width: 17em;
 	text-align: center;
-	border-bottom: #414141 0.12em solid;
+	border-bottom: $dark 0.12em solid;
 }
 p.date span{
 	font-style:italic;
-	color: #414141;
-	background: #f1f1f1 url("ressources/front.png");
+	color: $dark;
+	background: $light url("ressources/front.png");
 	padding:0.3em;
 	position: relative;
 	top: 0.9em;
 }
 h2 {
-	font-family: "Kontrapunkt Bob", sans-serif; 
-	font-size: 1.1em;
+	font-family: "KontrapunktBob", sans-serif; 
+	font-size: 1.2em;
 	font-weight: bold;
-	margin-top: 2em;
-	margin-bottom: -0.7em;
+	margin: 2em 0 0.5em 0;
 }
 p {
 	margin-bottom: 1em;
@@ -115,7 +112,7 @@ ul {
 	text-indent: 0px;
 }
 div.page p a:link, div.page p a:visited {
-	background: #f1f1f1 url("ressources/link.svg") no-repeat;
+	background: $light url("ressources/link.svg") no-repeat;
 	background-position: bottom right;
 	background-size: 0.5em;
 	top: 0;
@@ -127,36 +124,35 @@ div.page p a:hover, div.page p a:active, div.page p a:focus {
 	text-decoration: underline;
 }
 code {
-	font: {
-	family: "Menlo";
-	size: 0.9em;
-	weigth: 100;
-	}
+	font-family: "DejaVuSansMono", monospace;
+	font-size: 0.9em;
+	font-weigth: 100;
 }
 
-@import "css/code.css";
+
 
 pre {
 	@extend code;
 	line-height: 1.3em;
 	width: 98%;
 	margin: auto;
-	color: white;
+	color: $light;
 	background: $dark url("ressources/grid.png");
 	background-size: 29.7em;
 	background-position: center top;
 	box-shadow: inset 0 0 20em 0em rgba(0,0,0,0.4), 0 0em 0.4em rgba(0,0,0,0.5);
 	overflow-y: hidden;
+	margin-bottom: 2em;
 	div {
 		white-space: pre-wrap;
 		overflow-y: hidden;
-		padding: 0.8em 1.5em 0.65em 1.5em;
-		opacity: .7;
+		padding: 0.8em 2.5em 0.3em 2.5em;
+		margin-bottom: 0em;
 	}
 }
 /* Framing for Images on Page ----------------------- */
 .frame {
-	width: 29em;
+	width: 95%;
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
@@ -169,7 +165,7 @@ pre {
 .frame img {
 	width: 27.5em;
 	margin: 0px auto;
-	border: 0.75em solid #f1f1f1;
+	border: 0.75em solid $light;
 	border-image: url("ressources/front.png");
 	box-shadow: 0 0em 0.4em rgba(0,0,0,0.5);
 }
@@ -219,7 +215,7 @@ div.share {
 	margin-top: 2em;
 	width: 33em;
 	height: 1.4em;
-	background: #f1f1f1 url("ressources/front.png");
+	background: $light url("ressources/front.png");
 	box-shadow: 0 0.6em 0.4em -0.6em rgba(0,0,0,0.5);
 	padding-bottom: 0.5em;
 	margin-bottom: 1em;
@@ -228,7 +224,7 @@ div.share {
 }
 div.share a.tweet, div.share a.fbshare, div.share a.pin {
 	font-family: "SlabBlack", sans-serif;
-	color: #414141;
+	color: $dark;
 	text-decoration: none;
 	background-size: 0.95em;
 	padding-left: 1.2em;
@@ -262,8 +258,8 @@ div.share a.tweet, div.share a.fbshare, div.share a.pin {
 
 }
 .tags a {
-	background: #f1f1f1 url("ressources/front.png");
-	color: #414141;
+	background: $light url("ressources/front.png");
+	color: $dark;
 	font-family: "SlabBlack", sans-serif;
 	padding-top: 2em;
 	padding-bottom: 0.4em;
@@ -289,8 +285,8 @@ form.comment {
 	padding-right: 1em;
 	padding-bottom: 0em;
 	border-radius: 0.5em;
-	background: #f1f1f1 url("ressources/front.png");
-	color: #414141;
+	background: $light url("ressources/front.png");
+	color: $dark;
 	box-shadow: 0 0 1.3em black;
 }
 form.comment span {
@@ -298,12 +294,12 @@ form.comment span {
 }
 form.comment input {
 	width: 6.9em;
-	font-family: "Ubuntu", sans-serif;
+	font-family: "KontrapunktBob", sans-serif;
 	font-weight: 300;
 	font-style: italic;
 	font-size: 0.8em;
-	color: #414141;
-	background: #f1f1f1 url("ressources/front.png");
+	color: $dark;
+	background: $light url("ressources/front.png");
 	border: none;
 	padding-top: 0.3em;
 	padding-bottom: 0.3em;
@@ -317,12 +313,12 @@ form.comment input {
 form.comment textarea {
 	width: 36.5em;
 	text-align: left;
-	font-family: "Ubuntu", sans-serif;
+	font-family: "KontrapunktBob", sans-serif;
 	font-weight: 300;
 	font-style: italic;
 	font-size: 0.8em;
-	color: #414141;
-	background: #f1f1f1 url("ressources/front.png");
+	color: $dark;
+	background: $light url("ressources/front.png");
 	border: none;
 	padding: 0.5em;
 	border-radius: 0.4em;
@@ -339,8 +335,8 @@ form.comment input.button {
 	text-align: center;
 	width: 6.5em;
 	margin-top: -2em;
-	background: #414141;
-	color: #f1f1f1;
+	background: $dark;
+	color: $light;
 	padding-top: 2em;
 	padding-bottom: 0.4em;
 	padding-left: 0.7em;
@@ -359,8 +355,8 @@ div.footer{
 div.footer div {
 	width: 8.2em;
 	float: left;
-	background: #f1f1f1 url("ressources/front.png");
-	color: #414141;
+	background: $light url("ressources/front.png");
+	color: $dark;
 	padding: 0.4em 1.4em 0.4em 1.4em;
 	border-radius: 0.7em;
 	margin-left: 1.7em;
@@ -376,7 +372,7 @@ div.footer a {
 	text-decoration: none;
 }
 div.footer div.subscribe a {
-	font-family: "Ubuntu", sans-serif;
+	font-family: "KontrapunktBob", sans-serif;
 	font-weight: 500;
 	padding-right: 0.3em;
 	padding-left: 0.3em;
@@ -388,7 +384,7 @@ div.footer a:hover, div.footer a:active, div.footer a:focus {
 div.nav {
 	width: 5em;
 	position: absolute;
-	top: -6em;
+	top: -4em;
 	left: 0;
 	text-align: left;
 }
@@ -414,7 +410,7 @@ div.nav img:hover, div.nav img:focus {
 div.linklist {
 	width: 5em;
 	position: absolute;
-	top: -6em;
+	top: -4em;
 	right: 1em;
 	text-align: right;
 }

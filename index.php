@@ -7,7 +7,6 @@
 			Tobis Blog
 		</title>
 		<link rel="stylesheet" href="main.css">
-		<link href="http://fonts.googleapis.com/css?family=Ubuntu:300,500,300italic" rel="stylesheet" type="text/css">
 	</head>
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 	<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
